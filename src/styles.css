@@ -1,0 +1,63 @@
+@import 'tailwindcss' source('../');
+
+@theme {
+  --color-navy-950: #07131f;
+  --color-navy-900: #0c1f33;
+  --color-navy-800: #12304d;
+  --color-navy-700: #1a4266;
+  --color-steel-100: #eef2f6;
+  --color-steel-200: #dde4ec;
+  --color-steel-500: #6b7d90;
+  --color-amber-brand: #f2a516;
+  --color-amber-brand-dark: #d48c05;
+  --font-display: 'Unbounded', system-ui, sans-serif;
+  --font-sans: 'Onest', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-navy-900);
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.eyebrow {
+  @apply inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-amber-brand-dark;
+}
+.eyebrow::before {
+  content: '';
+  @apply h-0.5 w-8 bg-amber-brand;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-md bg-amber-brand px-6 py-3.5 font-semibold text-navy-950 transition hover:bg-amber-brand-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-brand disabled:cursor-wait disabled:opacity-70;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-md border border-white/30 px-6 py-3.5 font-semibold text-white transition hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white;
+}
+
+.form-label {
+  @apply mb-2 block text-sm font-medium text-navy-800;
+}
+
+.form-input {
+  @apply w-full rounded-md border border-steel-200 bg-white px-4 py-3 text-navy-900 transition placeholder:text-steel-500 focus:border-navy-700 focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-navy-700;
+}
+
+.blueprint {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
