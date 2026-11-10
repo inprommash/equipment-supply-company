@@ -31,16 +31,16 @@ export function SitePage({ lang }: { lang: Lang }) {
           className="absolute inset-0 -z-10 h-full w-full object-cover opacity-45"
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-r from-navy-950 via-navy-950/85 to-navy-950/20" />
-        <div className="mx-auto max-w-7xl px-5 pb-24 pt-36 sm:px-8 lg:pb-32 lg:pt-48">
-          <p className="eyebrow mb-6">{t.hero.eyebrow}</p>
-          <h1 className="font-display max-w-4xl text-4xl font-bold leading-[1.1] sm:text-5xl lg:text-6xl">
+        <div className="mx-auto max-w-7xl px-5 pb-16 pt-28 sm:px-8 lg:pb-20 lg:pt-36">
+          <p className="eyebrow mb-5">{t.hero.eyebrow}</p>
+          <h1 className="font-display max-w-3xl text-[1.75rem] font-bold leading-[1.15] sm:text-4xl lg:text-[2.75rem]">
             {t.hero.title}{' '}
             <span className="text-amber-brand">{t.hero.titleAccent}</span>
           </h1>
-          <p className="mt-8 max-w-2xl text-lg leading-relaxed text-steel-200 sm:text-xl">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-steel-200 sm:text-lg">
             {t.hero.lead}
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <a href="#contact" className="btn-primary">
               {t.hero.primary} <span aria-hidden>→</span>
             </a>
@@ -54,10 +54,10 @@ export function SitePage({ lang }: { lang: Lang }) {
             {t.stats.map((s, i) => (
               <div
                 key={s.label}
-                className={`py-7 pr-4 ${i > 0 ? 'lg:border-l lg:border-white/10 lg:pl-8' : ''}`}
+                className={`py-5 pr-4 ${i > 0 ? 'lg:border-l lg:border-white/10 lg:pl-8' : ''}`}
               >
                 <dt className="sr-only">{s.label}</dt>
-                <dd className="font-display text-2xl font-bold text-amber-brand sm:text-3xl">
+                <dd className="font-display text-xl font-bold text-amber-brand sm:text-2xl">
                   {s.value}
                 </dd>
                 <dd className="mt-1 text-sm text-steel-200">{s.label}</dd>
@@ -72,7 +72,7 @@ export function SitePage({ lang }: { lang: Lang }) {
         <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[1.1fr_1fr] lg:gap-20">
           <div>
             <p className="eyebrow mb-5">{t.about.eyebrow}</p>
-            <h2 className="font-display text-3xl font-bold leading-tight sm:text-4xl">
+            <h2 className="font-display text-2xl font-bold leading-tight sm:text-3xl">
               {t.about.title}
             </h2>
             {t.about.paragraphs.map((p) => (
@@ -102,7 +102,7 @@ export function SitePage({ lang }: { lang: Lang }) {
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="mb-14 max-w-3xl">
             <p className="eyebrow mb-5">{t.sectorsSection.eyebrow}</p>
-            <h2 className="font-display text-3xl font-bold leading-tight sm:text-4xl">
+            <h2 className="font-display text-2xl font-bold leading-tight sm:text-3xl">
               {t.sectorsSection.title}
             </h2>
             <p className="mt-5 text-lg text-navy-800/80">{t.sectorsSection.lead}</p>
@@ -155,7 +155,7 @@ export function SitePage({ lang }: { lang: Lang }) {
           <div className="mb-14 grid gap-6 lg:grid-cols-2 lg:items-end">
             <div>
               <p className="eyebrow mb-5">{t.supply.eyebrow}</p>
-              <h2 className="font-display text-3xl font-bold leading-tight sm:text-4xl">
+              <h2 className="font-display text-2xl font-bold leading-tight sm:text-3xl">
                 {t.supply.title}
               </h2>
             </div>
@@ -181,7 +181,7 @@ export function SitePage({ lang }: { lang: Lang }) {
       <section className="blueprint bg-navy-900 py-20 text-white lg:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <p className="eyebrow mb-5">{t.advantages.eyebrow}</p>
-          <h2 className="font-display max-w-3xl text-3xl font-bold leading-tight sm:text-4xl">
+          <h2 className="font-display max-w-3xl text-2xl font-bold leading-tight sm:text-3xl">
             {t.advantages.title}
           </h2>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -200,7 +200,7 @@ export function SitePage({ lang }: { lang: Lang }) {
       <section id="process" className="scroll-mt-20 py-20 lg:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <p className="eyebrow mb-5">{t.process.eyebrow}</p>
-          <h2 className="font-display max-w-3xl text-3xl font-bold leading-tight sm:text-4xl">
+          <h2 className="font-display max-w-3xl text-2xl font-bold leading-tight sm:text-3xl">
             {t.process.title}
           </h2>
           <ol className="mt-14 grid gap-10 md:grid-cols-4 md:gap-6">
@@ -227,7 +227,7 @@ export function SitePage({ lang }: { lang: Lang }) {
         <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
           <div>
             <p className="eyebrow mb-5">{t.form.eyebrow}</p>
-            <h2 className="font-display text-3xl font-bold leading-tight sm:text-4xl">
+            <h2 className="font-display text-2xl font-bold leading-tight sm:text-3xl">
               {t.form.title}
             </h2>
             <p className="mt-5 text-lg text-steel-200">{t.form.lead}</p>
