@@ -75,7 +75,7 @@ export const content: Record<Lang, Content> = {
     meta: {
       title: 'ТОВ «ІНПРОММАШ» — постачання промислового обладнання та запчастин',
       description:
-        'Постачання обладнання та запасних частин для газовидобувної та нафтової галузі, морських портів, машинобудування та гірничодобувної промисловості України.',
+        'Постачання обладнання, запасних частин і хімічної продукції для газовидобувної та нафтової галузі, морських портів, машинобудування та гірничодобувної промисловості України.',
     },
     legalName: 'ТОВ «ІНПРОММАШ»',
     nav: {
@@ -90,7 +90,7 @@ export const content: Record<Lang, Content> = {
       eyebrow: 'Промислове постачання · Україна',
       title: 'Обладнання та запчастини,',
       titleAccent: 'що тримають промисловість у русі',
-      lead: 'ТОВ «ІНПРОММАШ» постачає обладнання та запасні частини для газовидобувних і нафтових підприємств, морських портів, машинобудівних та гірничодобувних виробництв України.',
+      lead: 'ТОВ «ІНПРОММАШ» постачає обладнання, запасні частини та хімічну продукцію для газовидобувних і нафтових підприємств, морських портів, машинобудівних та гірничодобувних виробництв України.',
       primary: 'Отримати комерційну пропозицію',
       secondary: 'Галузі, з якими працюємо',
     },
@@ -128,7 +128,7 @@ export const content: Record<Lang, Content> = {
         client: 'Для АТ «Укргазвидобування»',
         description:
           'Обладнання для облаштування свердловин, промислових газопроводів та установок підготовки газу.',
-        items: ['Фонтанна та запірна арматура', 'Компресорне обладнання та ЗІП', 'Насоси та ущільнення', 'КВПіА та засоби вимірювання'],
+        items: ['Фонтанна та запірна арматура', 'Компресорне обладнання та ЗІП', 'Насоси та ущільнення', 'КВПіА та засоби вимірювання', 'Хімреагенти: інгібітори корозії та гідратоутворення, ПАР'],
       },
       {
         id: 'oil',
@@ -137,7 +137,7 @@ export const content: Record<Lang, Content> = {
         client: 'Для ПАТ «Укрнафта»',
         description:
           'Запчастини та комплектуючі для видобування, підготовки та транспортування нафти.',
-        items: ['Верстати-качалки та їх вузли', 'Штангові та відцентрові насоси', 'Бурове обладнання та інструмент', 'Трубопровідна арматура'],
+        items: ['Верстати-качалки та їх вузли', 'Штангові та відцентрові насоси', 'Бурове обладнання та інструмент', 'Трубопровідна арматура', 'Хімреагенти: деемульгатори, інгібітори, кислотні склади'],
       },
       {
         id: 'port',
@@ -161,10 +161,10 @@ export const content: Record<Lang, Content> = {
         id: 'mining',
         image: 'mining.png',
         title: 'Гірничодобування',
-        client: 'Для гірничодобувних підприємств',
+        client: 'Для гірничодобувних підприємств і ГЗК',
         description:
           'Вузли та запчастини для екскаваторів, дробарок, конвеєрів та збагачувального обладнання.',
-        items: ['Зношувані деталі дробарок і млинів', 'Конвеєрні стрічки, ролики, барабани', 'Запчастини до гірничої техніки', 'Футерування та броня'],
+        items: ['Зношувані деталі дробарок і млинів', 'Конвеєрні стрічки, ролики, барабани', 'Запчастини до гірничої техніки', 'Футерування та броня', 'Флотореагенти, флокулянти та інша хімія для збагачення'],
       },
     ],
     supply: {
@@ -178,6 +178,10 @@ export const content: Record<Lang, Content> = {
         { title: 'Гідравліка та пневматика', text: 'Гідроциліндри, насоси, розподільники, рукави високого тиску.' },
         { title: 'Електрообладнання', text: 'Електродвигуни, пускова апаратура, кабельна продукція.' },
         { title: 'Вироби під замовлення', text: 'Виготовлення деталей за кресленнями та зразками замовника.' },
+        {
+          title: 'Хімічна продукція',
+          text: 'Хімреагенти для АТ «Укргазвидобування», ПАТ «Укрнафта» та гірничо-збагачувальних комбінатів: інгібітори корозії, гідрато- та парафіновідкладень, деемульгатори, ПАР, реагенти для обробки свердловин, флотореагенти та флокулянти.',
+        },
       ],
     },
     advantages: {
@@ -236,7 +240,7 @@ export const content: Record<Lang, Content> = {
     meta: {
       title: 'INPROMMASH LLC — Industrial Equipment & Spare Parts Supply',
       description:
-        'Supply of equipment and spare parts for Ukraine’s gas and oil production, seaports, machine-building and mining industries.',
+        'Supply of equipment, spare parts and chemical products for Ukraine’s gas and oil production, seaports, machine-building and mining industries.',
     },
     legalName: 'INPROMMASH LLC',
     nav: {
@@ -251,7 +255,7 @@ export const content: Record<Lang, Content> = {
       eyebrow: 'Industrial supply · Ukraine',
       title: 'Equipment and spare parts',
       titleAccent: 'that keep industry running',
-      lead: 'INPROMMASH LLC supplies equipment and spare parts to gas and oil producers, seaports, machine-building plants and mining operations across Ukraine.',
+      lead: 'INPROMMASH LLC supplies equipment, spare parts and chemical products to gas and oil producers, seaports, machine-building plants and mining operations across Ukraine.',
       primary: 'Request a quote',
       secondary: 'Industries we serve',
     },
@@ -288,7 +292,7 @@ export const content: Record<Lang, Content> = {
         title: 'Gas production',
         client: 'For JSC Ukrgasvydobuvannya',
         description: 'Equipment for well completion, field gas pipelines and gas treatment units.',
-        items: ['Wellhead and shut-off valves', 'Compressor equipment and spares', 'Pumps and seals', 'Instrumentation and metering'],
+        items: ['Wellhead and shut-off valves', 'Compressor equipment and spares', 'Pumps and seals', 'Instrumentation and metering', 'Chemicals: corrosion and hydrate inhibitors, surfactants'],
       },
       {
         id: 'oil',
@@ -296,7 +300,7 @@ export const content: Record<Lang, Content> = {
         title: 'Oil production',
         client: 'For PJSC Ukrnafta',
         description: 'Parts and components for oil production, treatment and transportation.',
-        items: ['Pumping units and assemblies', 'Sucker-rod and ESP pumps', 'Drilling equipment and tools', 'Pipeline valves'],
+        items: ['Pumping units and assemblies', 'Sucker-rod and ESP pumps', 'Drilling equipment and tools', 'Pipeline valves', 'Chemicals: demulsifiers, inhibitors, acid treatment fluids'],
       },
       {
         id: 'port',
@@ -318,9 +322,9 @@ export const content: Record<Lang, Content> = {
         id: 'mining',
         image: 'mining.png',
         title: 'Mining',
-        client: 'For mining enterprises',
+        client: 'For mining and ore-processing plants',
         description: 'Assemblies and spare parts for excavators, crushers, conveyors and processing equipment.',
-        items: ['Crusher and mill wear parts', 'Conveyor belts, idlers, pulleys', 'Mining machinery spare parts', 'Liners and wear plates'],
+        items: ['Crusher and mill wear parts', 'Conveyor belts, idlers, pulleys', 'Mining machinery spare parts', 'Liners and wear plates', 'Flotation reagents, flocculants and processing chemicals'],
       },
     ],
     supply: {
@@ -334,6 +338,10 @@ export const content: Record<Lang, Content> = {
         { title: 'Hydraulics and pneumatics', text: 'Cylinders, pumps, directional valves, high-pressure hoses.' },
         { title: 'Electrical equipment', text: 'Electric motors, switchgear and cable products.' },
         { title: 'Made-to-order parts', text: 'Manufacturing of parts to customer drawings and samples.' },
+        {
+          title: 'Chemical products',
+          text: 'Chemicals for JSC Ukrgasvydobuvannya, PJSC Ukrnafta and ore mining and processing plants: corrosion, hydrate and paraffin inhibitors, demulsifiers, surfactants, well treatment reagents, flotation reagents and flocculants.',
+        },
       ],
     },
     advantages: {
