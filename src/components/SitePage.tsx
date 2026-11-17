@@ -163,7 +163,10 @@ export function SitePage({ lang }: { lang: Lang }) {
           </div>
           <div className="grid gap-px overflow-hidden rounded-lg bg-steel-200 ring-1 ring-steel-200 sm:grid-cols-2 lg:grid-cols-3">
             {t.supply.groups.map((g, i) => (
-              <div key={g.title} className="group bg-white p-8 transition hover:bg-navy-900">
+              <div
+                key={g.title}
+                className={`group bg-white p-8 transition hover:bg-navy-900 ${i === t.supply.groups.length - 1 && t.supply.groups.length % 3 === 1 ? 'sm:col-span-2 lg:col-span-3' : ''}`}
+              >
                 <span className="font-display text-sm font-bold text-amber-brand-dark group-hover:text-amber-brand">
                   {String(i + 1).padStart(2, '0')}
                 </span>
